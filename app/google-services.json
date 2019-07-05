@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "858868326848",
+    "firebase_url": "https://foodiey.firebaseio.com",
+    "project_id": "foodiey",
+    "storage_bucket": "foodiey.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858868326848:android:4ef5315eeeeae518",
+        "android_client_info": {
+          "package_name": "com.rainowncorp.foodiey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858868326848-4u4dfudddumhm3cggptlm6ka2itanbpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3mGB8DP6N51V8UOu44YnCaUNVcOcC2kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858868326848-4u4dfudddumhm3cggptlm6ka2itanbpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

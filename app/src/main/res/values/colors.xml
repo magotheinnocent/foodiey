@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CD4ff</color>
+    <color name="colorPrimaryDark">#18a3fe</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="appBlue">#4CD4ff</color>
+    <color name="appBlueDark">#18a3fe</color>
+
+    <color name="appWhite">#ffffff</color>
+
+    <color name="appRed">#D81B60</color>
+    <color name="appBlack">#000000</color>
+
+    <color name="appBar">#ffff8800</color>
+
+    <color name="gradientstart">#4CD4ff</color>
+    <color name="gradientend">#18a3fe</color>
+
+    <color name="tabindicator">#c0c0c0</color>
+    <color name="introtitle">#000000</color>
+    <color name="introdescription">#656565</color>
+</resources>

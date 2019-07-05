@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedRestaurant">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gradientend"
+        android:layout_height="200dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_menu_black_24dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/viewmenu"
+                    android:clickable="true"
+                    android:onClick="onClickReg"
+                    tools:ignore="OnClick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_shopping_cart_black_24dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/viewcart"
+                    android:onClick="ShowPopup"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="100dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/coffee"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Coffee"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view2">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/fries"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Fries"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/burger"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Burger"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view4">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pizza"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Pizza"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view5">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/sandwich"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Sandwich"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view6">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/salad"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Salas"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view7">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/milkshake"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Milkshake"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        app:cardBackgroundColor="@color/appWhite"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="15dp"
+                        app:cardElevation="3dp"
+                        android:layout_width="170dp"
+                        android:layout_height="160dp"
+                        android:onClick="onClickReg"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        tools:ignore="OnClick"
+                        android:id="@+id/card_view8">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/can"
+                                android:layout_height="45dp" />
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:text="Soda"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
